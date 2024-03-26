@@ -1,1 +1,1 @@
-"# Generative-AI-Class-Work" 
+"# Generative-AI-Class-Work"
