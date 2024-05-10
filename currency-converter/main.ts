@@ -2,23 +2,26 @@
 
 import inquirer from "inquirer";
  const currency: any = {
-    USD: 1,
+    USD: 1, //base currency
     EUR: 0.91,
     INR: 80,
     GBP: 76.65,
     PKR: 278,
+    BAN: 34,
  };
 let user_answer = await inquirer.prompt([{
     name: "from",
     message: "Enter From Currency",
     type: "list",
-    choices: ["USD", "GBP", "INR", "PKR", "EUR"]
+
+    
+    choices: ["USD", "GBP", "INR", "PKR", "EUR",]
 },
     {
         name: "to",
         message: "Enter To Currency",
         type: "list",
-        choices: ["USD", "GBP", "INR", "PKR", "EUR"]
+        choices: ["USD", "GBP", "INR", "PKR", "EUR", "BAN"]
     },
     {
         name: "amount",
@@ -27,6 +30,7 @@ let user_answer = await inquirer.prompt([{
     }
     
 ])
+
 
 
 let fromAmount = currency[user_answer.from]

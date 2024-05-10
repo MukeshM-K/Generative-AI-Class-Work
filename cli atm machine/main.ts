@@ -1,10 +1,10 @@
 #! /usr/bin/env node
 
-
+import chalk from "chalk";
 import { log } from "console";
 import inquirer from "inquirer";
 
-let myBalance = 10000;
+let myBalance = 20000;
 let myPin = 33442;
 
 let pinAnswer = await  inquirer.prompt({

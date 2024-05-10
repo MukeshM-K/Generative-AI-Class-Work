@@ -1,9 +1,13 @@
 {
-  "name": "to-do-list",
+  "name": "@mkmalhi/to-do-list",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
+  "bin": "main.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

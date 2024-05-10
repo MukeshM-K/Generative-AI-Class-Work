@@ -44,7 +44,4 @@ else if(answer.operator === "Multiplication"){
     console.log(chalk.yellow(answer.firstNumber % answer.secondNumber));
  }
 
- else if (answer.operator === "Increment"){
-    console.log(chalk.yellow(answer.firstNumber +++ answer.secondNumber));
- }
     
